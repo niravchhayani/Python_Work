@@ -1,0 +1,32 @@
+Background:
+As an introductory experience in Machine learning using Python, I chose Iris Flower database available online for learning purposes.
+
+Purpose:
+To implement understanding of the basic concepts of Python as well as libraries like, panads, matplotlib and Scikit-learn.
+
+Project:
+Here, some the libraries and functions from libraries are used just to see how it works, however, they are not useful in the same project is we only focus on the output of the work. 
+Pandas is used to load database from UCI’s machine learning database of iris flower. I have used it as the project is introductory work and it’s a small 150 samples with only 4 different types of features.
+
+Facts about database:
+	There are 3 types of flowers: 
+	1. Iris-setosa – 50 samples
+	2. Iris-versicolor – 50 samples
+	3. Iris-virginica – 50 samples
+4 Features:
+	1. Sepal-Width
+	2. Sepal-Length
+	3. Petal-Length
+	4. Petal-Width
+Here, instead of downloading database and then importing it, I have used directly available csv version database using pandas’ read_csv function.
+Next part of the code is statistical observation of the database. Shape and size are basic information. dataset.describe returned overall statistical information e.g., mean, min, max, standard deviation, etc. Using matplotlib library, some of the plots are presented. These are not having any direct importance, however, they are helpful to understand distribution of features in space. Histogram and scatter diagrams are used here on different features.
+
+Classification:
+1. Defined 2 arrays for features and class
+2. Defined validation size set as 80% training data + 20% testing data
+3. Seed defined as 7 to get some aspects of randomness in experiment
+4. To create subsets from available data, model_selection.train_test_split function is used form scikit-learn library. It is just to create some random subsets.
+5. Classification model is “K-Nearest Neighbour Classifier”. This model is also part of scikit-learn library.
+6. Some of the basic parameters are used here, e.g., accuracy score, confusion matrix and classification report. These are also functions from scikit-learn library.
+As scikit-learn is very huge library, instead of importing whole, I chose to import the functions which are needed only same as matplotlib library.
+KNN algorithm is used as basic classifier, however, in the commented codes, I tried to prepare comparative models for others classifiers such as Gaussian Mixture Model, Decision tree, etc.
